@@ -1,0 +1,259 @@
+body {
+    font-family: 'Gabarito', sans-serif;
+    overflow-x: hidden;
+}
+
+
+#offerBar{
+    /*display: grid;
+    grid-template-rows: 1fr 1fr ;*/
+    background-color: rgb(29, 35, 44);
+    color: rgb(214, 225, 225);
+    justify-content: center;
+    font-size: 25px;
+}
+#offerClose{
+    cursor: pointer;
+}
+#navBar{
+    background-color: white;
+    color: rgb(29, 35, 44);
+    position: sticky;
+    top: 0;
+    
+}
+#textImg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    align-content: center;
+}
+
+image{
+    --background-image: url(./image/slider.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+#image i{
+    font-size: 15em;
+    font-weight: 500;
+    color: white;
+}
+.na{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 4px;
+}
+.na img{
+    width: 250px;
+    height: 250px;
+    filter: brightness(40%);
+}
+.na button{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.mw{
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 4px;
+}
+.mw img{
+    width: 250px;
+    height: 250px;
+}
+.mw p{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    border-radius: 5px
+}
+.mw i{
+    font-size: 48px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#newarrivals::-webkit-scrollbar{
+    width: 0;
+}
+#sales::-webkit-scrollbar{
+    width: 0;
+}
+#offer_text{
+    color: rgb(226, 225, 225);
+}
+#offer{
+    background-color: rgb(29, 35, 44);
+}
+#input{
+    border-width: 2px;
+    border-color: black;
+    width: 70%;
+}
+#subscribe{
+    background-color: rgb(29, 35, 44);
+    color: white;
+}
+#footer{
+    background-color: rgb(29, 35, 44);
+    color: rgb(226, 225, 225);
+}
+#footer a{
+    font-size: 40px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    background: white;
+    background-clip: text;
+    color: transparent;
+}
+button i{
+    font-size: 30px;
+}
+
+.sale-overlay{
+    position: absolute;
+    top:8px;
+    left: 25px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+ }
+
+/*collection*/
+#signupBar i{
+    font-size: xx-large;
+}
+
+#navbar-menu-toggle {
+    display: none;
+}
+@media screen and (max-width:768px) {
+    #navbar-menu-toggle {
+        display: block;
+        font-size: xx-large;
+    }
+    #navBar-links {
+        display: none;
+    }
+    #signupBar{
+        font-size: 15px;
+    }
+    #signupBar i{
+        font-size: large;
+    }
+    #image i{
+        font-size: 5em;
+    }
+    #image{
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        color: white;
+        align-content: center;
+    }
+   
+   
+}
+
+/* Side Navbar */
+.side-navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #1D232C;
+    color: #E2E1E1;
+    margin-left: -60%;
+    transition-duration: 1s;
+    z-index: 10;
+    padding: 20px;
+  
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+
+.side-navbar-links a{
+    text-decoration: none;
+    color: #E2E1E1;
+}
+
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: #E2E1E1;
+}
+
+.side-navbar-search {
+    border: solid #E2E1E1 1px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.side-navbar-search input {
+    border: none;
+    background: transparent;
+}
+
+.divide-section{
+    display: flex;
+}
+
+.filter-section{
+    flex-basis: 25%;
+    position: relative;
+    font-size: 2vw;
+}
+
+.product-section{
+    flex-basis: 75%;
+    position: relative;
+}
+
+.vertical-line {
+    border: none;
+    border-left: 3px solid #1D232C; /* Adjust color and width as needed */
+    height: 100%; /* Adjust height as needed */
+    margin: 0 20px; /* Adjust margin as needed */
+    position: absolute;
+    top: 0px;
+    right: 0px
+    
+  }
+
+.filter-section-price,.filter-section-arrivals,.filter-section-occasion,.filter-section-colors{
+    margin-top: 3vw;
+    margin-bottom: 10px;
+    
+}
+
+.product-section{
+    padding: 10px;
+}
+
+.products{
+    margin-top: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size:1vw;
+}
